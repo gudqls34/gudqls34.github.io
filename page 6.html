@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+   <style type="text/css">
+   	
+   	table{
+
+   		border-collapse: collapse;
+   	}
+   	.abc{
+   		text-align: center;
+   		font-weight: bold;
+   	}
+
+
+   	*{
+			padding: 0px;
+			margin: 0px;
+		}
+		 ul,li{list-style:none;} 
+
+		 body{
+		 	
+		 }
+
+		 .clear{clear: both;}
+
+
+     .longbar{
+      border-color: #804000;
+       position: absolute;
+               width: 100%;
+               height: 50px;
+     }
+
+
+
+		 .bar{
+               background-color: #804000;
+               position: absolute;
+               width: 100%
+               left: 160px;
+
+
+		 	 height: 50px;
+		 }
+
+		 .dawn{
+
+		 	margin-top: 50px;
+		 }
+     .dawn1{
+      margin-top: 5px;
+     }
+
+		 #page{
+		 	width: 100%;
+		 	margin: auto;
+		 }
+		 .pagehea{
+		 	width: 1200px;
+		 	margin: auto;
+		 	 ;
+		 }
+
+		 .donut{
+			float: left;
+			
+		}
+		.ee{
+			height: 80px;
+			width: 200px;
+
+		}
+
+
+		header{height: 90px;   }
+
+
+		nav{ border: solid 0px red;
+		 }
+
+		nav li{
+			/*float: left;
+			margin: 30 20px;
+			margin-left: :-70px;
+			overflow: hidden;*/
+      float: left;
+      margin: 10px 60px;
+      font-weight: bold;
+      
+      overflow: hidden;
+
+		}
+
+		#ss{
+      text-align: center;
+
+			margin-left: 150px;
+      
+      font-size: 20px;
+			/*text-align: center;
+			padding-top: 10px;
+			font-size: 20px;
+			font-weight: bold;
+			 position:relative;
+			right: -300px;
+      left: 300px;
+      margin-right: 100px;
+			*/
+
+			
+
+		}
+		#ss li{
+			border-bottom: solid 5px #696969;
+			    color: #000000;
+			   
+
+			}
+
+
+
+		#nav{
+			width: 100%;
+			height: 50px;
+			background-color: #804000;
+		}
+		#aaa{
+			float: right;
+			width: 400px;
+			height: 70px;
+			margin: 10px;
+			
+		}
+		
+
+		#top{
+			float: right;
+			font-size: 13px;
+			font-weight: bold;
+			color: #808080;
+			margin-top: 40px;
+			
+		}
+
+		#hi{background-color:#ffffff;}
+
+
+   
+    .slide{  height:500px;overflow:hidden; 
+
+     
+      } 
+    .slide ul{width:calc(100% * 4);display:flex;animation:slide 60s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */ 
+    .slide li{width:calc(100% / 4);height:300px;} 
+    .slide li:nth-child(1){background:#ffa;} 
+    .slide li:nth-child(2){background:#faa;} 
+    .slide li:nth-child(3){background:#afa;} 
+    .slide li:nth-child(4){background:#aaf;} 
+    @keyframes slide { 
+      0% {margin-left:0;} /* 0 ~ 10  : 정지 */ 
+      10% {margin-left:0;} /* 10 ~ 25 : 변이 */ 
+      25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */ 
+      35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */ 
+      50% {margin-left:-200%;} 
+      60% {margin-left:-200%;} 
+      75% {margin-left:-300%;} 
+      85% {margin-left:-300%;} 
+      100% {margin-left:0;} 
+    } 
+    
+
+
+		#slided{height:200px;position:relative; overflow: hidden; }
+
+		.img-wrapper {
+          width:195px;
+         height:195px;
+         position:relative;
+          cursor:pointer;}
+
+          .img-wrapper img {
+            box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+             width:inherit;
+             height:inherit;
+             }
+
+             .img5 {
+             	top: -778px;
+             	left: 202px;
+             }
+
+             .img6{ top:-972px;
+                     left: 402px; 
+
+
+             }
+             .img7{
+
+             	top:-1168px;
+                     left: 802px; 
+
+
+             }
+             
+
+             .img8{
+                 top:-1364px;
+                left:1202px;
+                }
+
+                .img1{
+                	top: 2px;
+                	left: 2px;
+                }
+
+             .img2 {
+ 			 top:-194px;
+  			left:602px;
+
+			}
+
+.img3 {
+  top:-388px;
+  left:1002px;
+}
+
+.img4 {
+  top:-584px;
+  left:1402px;
+}
+.darkness {
+  position:absolute;
+  top:0;
+  left:0;
+  width:inherit;
+  height:inherit;
+  background:#000000;
+  opacity:0;
+  transition:all .6s linear;
+}
+
+/* 추가된 부분 */
+.btn-plus {
+  position: relative;
+  top:-125px;
+  left:70px;
+  background:red;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  text-align:center;
+  opacity:0;
+  transform:scale(2);
+  transition:all .3s linear;
+}
+
+
+
+/* 추가된 부분 */
+.btn-plus span {
+  font-size:2.3em;
+  color:#ffffff;
+  user-select:none;
+}
+.img-wrapper:hover .darkness{
+  opacity:0.4;
+}
+
+/* 추가된 부분 */
+.img-wrapper:hover .btn-plus {
+  opacity:1;
+  transform:scale(1);
+}
+
+
+#slided ul{width:400%;height:100%;transition:1s;}
+  #slided ul:after{content:"";display:block;clear:both;}
+  #slided li{float:left;width:25%;height:100%;}
+  #slided li:nth-child(1)
+  #slided li:nth-child(2)
+  #slided li:nth-child(3){background:#faF;}
+  #slided li:nth-child(4){background:#aaf;}
+  #slided input{display:none;}
+  #slided label{display:inline-block;vertical-align:middle;width:20px;height:40px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:40%;cursor:pointer; margin-left:-580px; margin-right:-580px;}
+  #slided .pos{text-align:center;position:absolute;bottom:80px;left:0;width:100%;text-align:center;}
+  #pos2:checked~ul{margin-left:0%;}
+  #pos1:checked~ul{margin-left:-34%;}
+  #pos3:checked~ul{margin-left:-200%;}
+  #pos4:checked~ul{margin-left:-300%;}
+  #pos2:checked~.pos>label:nth-child(2){background:#666;}
+  #pos1:checked~.pos>label:nth-child(1){background:#666;}
+  #pos3:checked~.pos>label:nth-child(3){background:#666;}
+  #pos4:checked~.pos>label:nth-child(4){background:#666;}
+
+
+
+#rast{
+		     float: left;
+			margin: 10px 0 0 10px;
+			font-size: 17px;
+			font-weight: bold;
+			color: #696969;
+		 }
+		 #rast1{
+		 	float: right;
+		 	margin-top: 10px;
+		 	margin-right: 10px;
+		 	font-size: 25px;
+		 	font-weight: bold;
+		 	color: #191970 ; }
+
+
+		 	footer{
+			background-image:url('./img/jea2.png');
+			width: 100%;
+			height: 80px;
+			margin-top: 50px;
+			background-color: #d3d3d3;
+
+			border-radius: 15px;
+		}
+
+
+		section{
+
+			width: 1200px;
+			height: 100px;
+		}
+		#gudqls{
+
+			margin-top: 100px;
+			margin-left: 500px;
+		}
+
+
+   </style>
+</head>
+<body>
+	 <div id="page">
+     	<div id="hi">
+     	<div class="pagehea">
+	<header id="aa">
+	<div class="donut">
+			<a href="index.html">
+				<div class="ee"><img src="./img/donut.png"  width="200"></a> </div>
+
+				 </div>
+				 <div id="aaa">
+		     <div id="top"> 
+			<a href="index.html"><img src="./img/ho.gif"> </a>ㅣ<a href="page 6.html">로그인</a>ㅣ<a href="page7.html">채용공고</a>ㅣ<a href="page 8.html">사이트 맵</a>ㅣ 음식 소개 ㅣ 창업 문의 
+		     </div></div>
+		
+		
+	  </header>
+	  </div>
+	</div>
+
+  <div class="longbar"></div>
+       
+<div class="pagehea">
+	<nav id="nav">
+		<ul id="ss">
+			<a href=""><li>회사 소개</li></a>
+			<li>기획</li>
+			<li>나만의 페이지</li>
+			<li>고객 센터</li>
+			
+		</ul>
+	</nav></div>
+<div class="pagehea">
+   <section>
+	<div id="gudqls"><table border="1"><tr>
+		<td colspan="3" class="abc">
+		 로그인
+
+
+	</td>
+
+
+
+</tr>
+<tr>
+
+	<td>ID</td>
+	<div class="abc"><td > <input type="text" name=""></td></div>
+	<td rowspan="2"><button>로그인</button></td>
+		
+
+		 </tr>
+		 <tr>
+		 	<td>PW</td>
+		 	<td><input type="password" name=""></td>
+       
+	</tr>
+	</table>
+</div>
+	</section>
+</div>
+
+		<div class="pagehea"> 	<footer>
+	<div id="rast">
+		(주)도넛이 최고야 ㅣ 대표이사:박형준ㅣ사업자 등록 번호 : 122 22 33 44  
+		<p>전화 번호 : 02 211 2222ㅣ경기도 부천시 계수동 산 791 몽당기숙사 304호 
+		<p>
+			<p>
+			Copyright by capri Sun 
+	
+         </div>
+         <div id="rast1">
+           고객 센터 1588 1111
+         </div>
+</footer>
+	</div></div>
+
+
+
+</div>
+      
+      
+
+</body>
+</html>
